@@ -1,13 +1,13 @@
 package org.train.fast_slow;
 
-import org.train.linked_list.LinkedListNode;
+import org.train.linked_list.ListNode;
 
 /**
  * LeetCode #141 - Linked List Cycle
  * Link: <a href="https://leetcode.com/problems/linked-list-cycle/">...</a>
  */
 public class LinkedListLoop {
-    public boolean solution(LinkedListNode head) {
+    public boolean solution(ListNode head) {
         var slow = head;
         var fast = head;
 

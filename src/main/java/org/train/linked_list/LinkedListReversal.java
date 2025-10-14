@@ -5,12 +5,12 @@ package org.train.linked_list;
  * Link: <a href="https://leetcode.com/problems/reverse-linked-list/">...</a>
  */
 public class LinkedListReversal {
-    public LinkedListNode solution(LinkedListNode head) {
+    public ListNode solution(ListNode head) {
         var current = head;
-        LinkedListNode prv = null;
+        ListNode prv = null;
 
         while(current != null){
-            LinkedListNode tmp = current.next;
+            ListNode tmp = current.next;
             current.next = prv;
             prv = current;
             current = tmp;
