@@ -39,7 +39,7 @@ public class SortLinkList {
         var tail = dummy;
 
         while (first != null && second != null) {
-            if (first.value < second.value) {
+            if (first.val < second.val) {
                 tail.next = first;
                 first = first.next;
             } else {

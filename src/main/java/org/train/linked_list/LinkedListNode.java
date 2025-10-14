@@ -1,11 +1,11 @@
 package org.train.linked_list;
 
 public class LinkedListNode {
-    public int value;
+    public int val;
     public LinkedListNode next;
 
-    public LinkedListNode(int value) {
-        this.value = value;
+    public LinkedListNode(int val) {
+        this.val = val;
         this.next = null;
     }
 }
