@@ -5,12 +5,12 @@ package org.train.linked_list;
  * Link: <a href="https://leetcode.com/problems/reverse-linked-list/">...</a>
  */
 public class RemoveKthNode {
-    public LinkedListNode solution(LinkedListNode head, int k) {
+    public ListNode solution(ListNode head, int k) {
         if (head == null) {
             return null;
         }
 
-        var dummy = new LinkedListNode(-1);
+        var dummy = new ListNode(-1);
         dummy.next = head;
 
         var car = dummy;

@@ -1,13 +1,13 @@
 package org.train.search_sort;
 
-import org.train.linked_list.LinkedListNode;
+import org.train.linked_list.ListNode;
 
 /**
  * LeetCode #148. Sort List
  * Link: <a href="https://leetcode.com/problems/sort-list/">...</a>
  */
 public class SortLinkList {
-    public LinkedListNode solution(LinkedListNode head) {
+    public ListNode solution(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -20,7 +20,7 @@ public class SortLinkList {
         return sortAndMerge(firsSorted, secondSorted);
     }
 
-    LinkedListNode split(LinkedListNode head) {
+    ListNode split(ListNode head) {
         var slow = head;
         var fast = head;
 
@@ -34,8 +34,8 @@ public class SortLinkList {
         return secondHead;
     }
 
-    LinkedListNode sortAndMerge(LinkedListNode first, LinkedListNode second) {
-        var dummy = new LinkedListNode(0);
+    ListNode sortAndMerge(ListNode first, ListNode second) {
+        var dummy = new ListNode(0);
         var tail = dummy;
 
         while (first != null && second != null) {

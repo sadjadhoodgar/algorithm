@@ -1,10 +1,10 @@
 package org.train.linked_list;
 
-public class LinkedListNode {
+public class ListNode {
     public int val;
-    public LinkedListNode next;
+    public ListNode next;
 
-    public LinkedListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
         this.next = null;
     }
