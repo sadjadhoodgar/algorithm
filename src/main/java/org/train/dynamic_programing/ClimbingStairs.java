@@ -5,20 +5,20 @@ package org.train.dynamic_programing;
  * Link: <a href="https://leetcode.com/problems/climbing-stairs/">...</a>
  */
 public class ClimbingStairs {
-    int solution(int n) {
-        if (n <= 2) {
-            return n;
-        }
+	int solution(int n) {
+		if (n <= 2) {
+			return n;
+		}
 
-        int oneStepBefore = 2, twoStepBefore = 1;
+		int oneStepBefore = 2, twoStepBefore = 1;
 
-        for (int i = 3; i <= n; i++) {
-            int current = oneStepBefore + twoStepBefore;
+		for (int i = 3; i <= n; i++) {
+			int current = oneStepBefore + twoStepBefore;
 
-            twoStepBefore = oneStepBefore;
-            oneStepBefore = current;
-        }
+			twoStepBefore = oneStepBefore;
+			oneStepBefore = current;
+		}
 
-        return oneStepBefore;
-    }
+		return oneStepBefore;
+	}
 }
