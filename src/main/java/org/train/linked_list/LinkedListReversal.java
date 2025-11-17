@@ -5,5 +5,8 @@ package org.train.linked_list;
  * Link: <a href="https://leetcode.com/problems/reverse-linked-list/">...</a>
  */
 public class LinkedListReversal {
+    public ListNode solution(ListNode head){
+        ListNode dummy = head;
 
+    }
 }
